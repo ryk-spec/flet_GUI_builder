@@ -1,0 +1,20 @@
+[project]
+name = "flet-gui-builder"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "ryk-spec",email = "watanabe.ryo.r45@kyoto-u.jp"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "flet (>=0.27.6,<0.28.0)"
+]
+
+[tool.poetry]
+packages = [{include = "flet_gui_builder", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
